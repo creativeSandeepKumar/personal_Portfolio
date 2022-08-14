@@ -1,0 +1,72 @@
+.accomplish-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 3rem 0 2rem 0;
+}
+
+.accomplish-topLine {
+    border-radius: 4px;
+    width: 3rem;
+    height: 7px;
+    background: linear-gradient(90deg, rgba(78,127,168,1) 0%, rgba(221,24,255,1) 100%);
+}
+
+.accomplish-main h2 {
+    padding: 1rem 0 0rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.accomplish-main p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tech-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+    /* justify-content: space-around; */
+
+}
+
+.tech-main-para {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+} 
+
+.tech-icon {
+    font-size: 1.5rem;
+}
+
+.tech-section h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tech-section p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+    .tech-container {
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+    .accomplish-main h2 {
+        padding: 1rem 0 0rem 0;
+        font-size: 2.3rem;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .accomplish-main {
+        width: 80%;
+    }
+}

@@ -1,0 +1,116 @@
+.header-main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5rem 0;
+}
+
+.header-section1 { grid-area: section1; }
+.header-section2 { grid-area: section2; }
+
+.header-main {
+    display: grid;
+    grid-template-areas: "section2 section2 section2 section1 section1 section1";
+    gap: 2rem;
+}
+
+.header-section2 img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.header-main h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.header-main p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-main button {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(137,78,168,0.9556197478991597) 26%, rgba(24,203,255,1) 100%);
+    box-sizing: border-box;
+    border-radius: 999px;
+    padding: 16px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.4s ease;
+   margin-top: 1.5rem;
+    
+    
+}
+
+.header-main button:focus {
+        outline: none; 
+}
+.header-main button:hover {
+   
+        color: #fff;
+        background: #0F1624;
+       border: 1px solid #fff;
+      
+}
+.header-main button:active {
+        background: #e0e4eb;
+        border: 1px solid #304169;
+        box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);   
+}
+
+
+@media screen and (max-width: 420px) {
+    .header-main {
+        width: 80%;
+    }
+    .header-main h1 {
+        font-size: 2rem;
+    }
+    .header-main button {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-section2 {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .header-section2 img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .header-main {
+      
+        grid-template-areas: "section2 section2 section2"  "section1 section1 section1";
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .header-section2 img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header-section2 img {
+       max-height: 200px;
+       max-width: 200px;
+        object-fit: cover;
+    }
+}
